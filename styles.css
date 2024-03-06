@@ -47,6 +47,10 @@ header {
   .heading-color-1 {
     color: #FF4101;
   }
+
+  .heading-color-2 {
+    color: #AA5539;
+  }
   
   .heading-Large {
     font-size: 4em;
@@ -70,10 +74,29 @@ header {
     font-family: 'Font2', sans-serif;
   }
 
-  .rescue-text {
-    color: #AA5539; 
+  .header-icons {
+    position: absolute;
+    top: 3em;
+    left: 0.625em;
+    display: flex;
+    align-items: center;
   }
-
+  
+  .header-icon {
+    width: 2.7em;
+    height: 2.7em;
+    margin-right: 0.625em;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .ins-icon {
+    background-image: url("Cat Photo/ins.jpeg");
+  }
+  
+  .facebook-icon {
+    background-image: url("Cat Photo/facebook.jpeg");
+  }
   
 /** Top Bar - Cat Logo **/
 
