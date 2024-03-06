@@ -2,9 +2,23 @@ body{
     margin: 0;
 }
 
+/** Top Bar **/
+
 header{
     width:100%;
     height: 25em;
     background-color: #332D2B;
     display: flex;
+}
+
+.header-h1-center{
+    margin: auto;
+}
+
+.heading-color-1{
+    color: #FF4101;
+}
+
+.heading-Large{
+    font-size: 3em;
 }
