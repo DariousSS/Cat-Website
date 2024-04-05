@@ -1,0 +1,233 @@
+/** Main Body / Hero Title **/
+.welcome-section {
+    background-image: url('./img/hero-background-4.jpg');
+  }
+
+
+/**  Main Body / Upcoming Events **/
+
+ .upcoming-events {
+    max-width: 70vw;
+    padding: 200px 15vw;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    color: var(--text-100);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    color: var(--text-100);
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  
+  .event-highlight {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  
+  .event-image {
+    width: 45%;
+    position: relative;
+  }
+  
+  .event-image img {
+    width: 100%;
+    border-radius: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .event-date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--text-100);
+    color: var(--accent-100);
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .event-date-number {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+
+.event-date-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--text-100);
+    color: var(--accent-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .event-date-circle .event-date-number {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  
+  .event-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .event-tag {
+    background-color: var(--text-100);
+    color: var(--accent-100);
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .event-title {
+    font-weight: 600;
+    color: var(--text-100);
+    font-size: 24px;
+  }
+  
+  .event-time,
+  .event-description {
+    font-size: 18px;
+    color: var(--text-100);
+    line-height: 1.6;
+    padding-bottom: 5px;
+  }
+  
+  .event-actions {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  
+  .event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  .event-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .event-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .sold-out {
+    background-color: var(--text-100);
+    width: 80px;
+    color: var(--accent-100);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+
+
+  /**  Main Body / Upcoming Events / Events Details **/ 
+
+  .event-details-more {
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 15vw;
+  }
+  
+  .event-detail-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+  }
+  
+  .event-image {
+    width: 45%;
+    object-fit: cover;
+
+  }
+  
+  .event-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .event-image-circle {
+    width: 45%;
+    padding-top: 45%; 
+    position: relative;
+  }
+  
+  .event-image-circle img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .event-content {
+    width: 50%;
+    color: var(--text-100);
+    padding-left: 5vw;
+  }
+  
+  .event-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .event-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+
+  

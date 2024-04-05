@@ -1,0 +1,306 @@
+/** Main Body / Hero Title **/
+.welcome-section {
+    background-image: url('./img/hero-background-5.jpg');
+  }
+
+
+/** Main Body / Volunteer Navigation **/
+
+.container-volunteer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 180px 20px;
+  }
+  
+  
+  .volunteer-navigation .container-volunteer  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .volunteer-image {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .volunteer-image img {
+    object-fit: cover;
+  }
+  
+  .volunteer-content {
+    width: 45%;
+    color: var(--text-100);
+  }
+  
+  .volunteer-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .volunteer-description {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .volunteer-roles-intro {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .volunteer-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .volunteer-roles a{
+    color: var(--text-100);
+  }
+  
+  .volunteer-role {
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .volunteer-roles a:hover {
+    color: var(--accent-100);
+  }
+  
+  .volunteer-role img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .volunteer-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+
+  
+
+  /** Main Body / Shelter-roles **/
+
+  .events{
+    padding: 200px auto;
+  }
+  
+  .shelter-roles {
+    position: relative;
+    color: var(--text-100);
+    padding: 500px 15vw;
+    max-width: 70vw;
+  }
+  
+  .shelter-roles-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 70px;
+  }
+  
+  .shelter-roles-content {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .shelter-role {
+    width: 300px;
+  }
+  
+  .shelter-role-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .shelter-role-description {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .shelter-roles-image-1 {
+    position: absolute;
+    top: 5px;
+    left: -100px;
+    transform: rotate(60deg);
+    height: 400px;
+  }
+  
+  .shelter-roles-image-2 {
+    position: absolute;
+    transform: rotate(-60deg);
+    height: 400px;
+    right: 6vw;
+  }
+
+
+  /** General **/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-100);
+    margin-bottom: 50px;
+  }
+
+  .quote {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .quote:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--primary-100);
+  }
+  
+
+
+  /** Main Body / Events roles **/
+  .events {
+    max-width: 70vw;
+    padding: 200px 15vw;
+  }
+  
+  .events-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .events-description-content {
+    width: 45%;
+    color: var(--text-100);
+  }
+  
+  .events-description-content p,
+  .trustee-roles-content p,
+  .trustee-detail p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+  
+  .events-description-content h3,
+  .trustee-detail h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  .events-description-image {
+    width: 40%;
+  }
+  
+  .events-description-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+  
+  /** Main Body / Trustee roles **/
+  .trustee {
+    padding: 200px 15vw;
+    max-width: 70vw;
+  }
+  
+  .trustee-roles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    color: var(--text-100);
+  }
+  
+  .trustee-roles-title {
+    font-size: 24px;
+    font-weight: 600;
+    width: 45%;
+  }
+  
+  .trustee-roles-content {
+    width: 45%;
+  }
+  
+  .trustee-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .trustee-detail {
+    width: 30%;
+    color: var(--text-100);
+  }
+  
+  .trustee-detail img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  
+
+
+  /** Main Body / What you will be doing **/
+  .responsibilities {
+    padding: 200px 15vfw;
+    max-width: 70vw;
+  }
+  
+  .trustee-responsibilities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .trustee-responsibilities-image {
+    width: 45%;
+  }
+  
+  .trustee-responsibilities-image img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+  
+  .trustee-responsibilities-content {
+    width: 45%;
+    color: var(--text-100);
+  }
+  
+  .trustee-responsibilities-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .trustee-responsibilities-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .trustee-responsibilities-content li {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }

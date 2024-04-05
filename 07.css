@@ -1,0 +1,101 @@
+/** Main Body / Hero Title **/
+.welcome-section {
+  background-image: url('./img/hero-background-1.jpg');
+}
+
+
+/** Main body / History Section - Video Text **/
+
+  .video-section {
+    position: relative;
+  }
+  
+  .video-section video {
+    width: 80%;
+    overflow: hidden;
+  }
+ 
+  
+
+  
+  /** Main Body / History Section - Img and Text **/
+  
+  .cat-img img {
+    width: 30vw; 
+    height: auto; 
+    max-width: 100%;
+    display: block; 
+    margin: 2rem 0;
+  }
+  
+  .history-section {
+    padding: 3rem 0;
+  }
+  
+  .history-content {
+    max-width: 50rem;
+    margin: 4rem auto;
+  }
+  
+  .history-item {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-100);
+    margin-bottom: 8rem;
+  }
+  
+  .history-text {
+    width: 28rem;
+    line-height: 1.5;
+  }
+  
+  .history-text h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .img-leaf {
+    width: 6vw;
+    height: 6vw;
+    margin-top: 2.5rem;
+  }
+  
+  .align-end {
+    justify-content: flex-end;
+  }
+  
+  .pos-right {
+    margin-right: 10.9375rem;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  }
+
+
+
+/** Animation **/
+.history-texts,
+.history-text {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+
+.history-texts.animate,
+.history-text.animate {
+  animation: fadeInUp 1s ease forwards;
+}
+
+
+.history-section {
+  scroll-margin-top: 50vh; 
+}
+
+
+
+.history-section:hover .history-texts,
+.history-section:hover .history-text {
+  animation: fadeInUp 1s ease forwards;
+}

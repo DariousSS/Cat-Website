@@ -1,0 +1,150 @@
+/** Main Body / Hero Title **/
+.welcome-section {
+    background-image: url('./img/hero-background-6.jpg');
+  }
+
+
+/** Main Body / Support Us **/
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-100);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .btn-group-6-1 {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+
+ .support {
+    padding: 100px 15vw;
+    max-width: 70vw;
+  }
+  
+  .support-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .support-image {
+    width: 45%;
+  }
+  
+  .support-image img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .support-info {
+    width: 45%;
+    color: var(--text-100);
+  }
+  
+  .support-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .support-description {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .support .btn-group-6-1 {
+    display: flex;
+    gap: 20px;
+  }
+  
+
+
+
+  /** Main Body / Donate **/
+  .container-donate {
+    max-width: 70vw;
+    padding: 0 15vw;
+  }
+
+ .donate-info-top{
+    padding: 10px 0;
+  }
+
+ .donate {
+    padding: 300px 0;
+  }
+  
+  .donate-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .donate-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-100);
+    width: 45%;
+  }
+  
+  .donate-info {
+    color: var(--text-100);
+    width: 50%;
+  }
+  
+  .donate-info p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .donate .btn-group-6-1 {
+    display: flex;
+    gap: 20px;
+    margin-top: 60px;
+  }
+  
+
+
+  /** Main Body / Fundraise **/
+  .fundraise {
+    padding: 300px 15vw;
+    max-width: 70vw;
+  }
+  
+  .fundraise-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .fundraise-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-100);
+    width: 45%;
+  }
+  
+  .fundraise-info {
+    color: var(--text-100);
+    width: 50%;
+  }
+  
+  .fundraise-info p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .fundraise .btn-group-6-1 {
+    display: flex;
+    gap: 20px;
+    margin-top: 60px;
+  }
