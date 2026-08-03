@@ -43,33 +43,36 @@
   }
   
   .event-date {
+    box-sizing: border-box;
     position: absolute;
     top: 10px;
     left: 10px;
     border-radius: 100%;
-    width: 90px;
-    height: 90px;
+    width: clamp(48px, 16vw, 90px);
+    height: clamp(48px, 16vw, 90px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: clamp(2px, 1vw, 5px);
     background-color: var(--text-100);
     color: var(--accent-100);
-    font-size: 14px;
+    font-size: clamp(9px, 2.5vw, 14px);
     text-align: center;
-    padding: 10px;
+    padding: clamp(4px, 1.5vw, 10px);
   }
-  
+
   .event-date-number {
-    font-size: 24px;
+    font-size: clamp(14px, 4.5vw, 24px);
     font-weight: 600;
   }
 
 
 .event-date-circle {
-    width: 90px;
-    height: 90px;
+    box-sizing: border-box;
+    width: clamp(48px, 16vw, 90px);
+    height: clamp(48px, 16vw, 90px);
+    flex-shrink: 0;
     border-radius: 50%;
     background-color: var(--text-100);
     color: var(--accent-100);
@@ -78,12 +81,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
-    font-size: 14px;
+    padding: clamp(4px, 1.5vw, 10px);
+    font-size: clamp(9px, 2.5vw, 14px);
   }
-  
+
   .event-date-circle .event-date-number {
-    font-size: 24px;
+    font-size: clamp(14px, 4.5vw, 24px);
     font-weight: 600;
   }
 

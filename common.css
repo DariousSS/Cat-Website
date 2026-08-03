@@ -163,6 +163,14 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+
+  /* Added by site.js: slides the bar out of view while scrolling down,
+     and back in as soon as the user scrolls up, so it doesn't eat
+     screen space while reading on a small viewport. */
+  .top-bar.is-hidden {
+    transform: translateY(-100%);
   }
 
   .fixed-bar {
@@ -1017,6 +1025,18 @@ main {
 
   header {
     padding: 16px;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .donate-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 
   nav {
