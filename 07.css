@@ -76,26 +76,53 @@
 
 
 /** Animation **/
+/* No script adds an "animate" class and there's no hover on touch
+   devices, so text gated behind opacity: 0 until hover/animate never
+   appeared on mobile. Play the fade-in once on load instead, so the
+   content is always reliably visible. */
 .history-texts,
 .history-text {
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-
-.history-texts.animate,
-.history-text.animate {
-  animation: fadeInUp 1s ease forwards;
+  animation: fadeInUp 0.8s ease both;
 }
 
 
 .history-section {
-  scroll-margin-top: 50vh; 
+  scroll-margin-top: 50vh;
 }
 
 
+/** Responsive **/
+@media (max-width: 900px) {
+  .cat-img img {
+    width: 45vw;
+    margin: 2rem auto;
+  }
 
-.history-section:hover .history-texts,
-.history-section:hover .history-text {
-  animation: fadeInUp 1s ease forwards;
+  .history-content {
+    margin: 2rem auto;
+    padding: 0 20px;
+  }
+
+  .history-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .history-text {
+    width: 100%;
+    max-width: 32rem;
+  }
+
+  .img-leaf {
+    width: 12vw;
+    height: 12vw;
+    margin-top: 0;
+  }
+
+  .pos-right {
+    margin-right: 0;
+  }
 }

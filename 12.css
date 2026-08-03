@@ -148,3 +148,76 @@
     gap: 20px;
     margin-top: 60px;
   }
+
+
+  /** Responsive **/
+  @media (max-width: 1024px) {
+    .support,
+    .fundraise {
+      max-width: 100%;
+      padding: 80px 8vw;
+    }
+
+    .container-donate {
+      max-width: 100%;
+      padding: 0 8vw;
+    }
+
+    .donate {
+      padding: 150px 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .support {
+      padding: 60px 20px;
+    }
+
+    .support-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .support-image,
+    .support-info {
+      width: 100%;
+    }
+
+    .support-image img {
+      max-width: 60%;
+    }
+
+    .donate {
+      padding: 80px 0;
+    }
+
+    .container-donate {
+      padding: 0 20px;
+    }
+
+    .donate-content {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .donate-title,
+    .donate-info {
+      width: 100%;
+    }
+
+    .fundraise {
+      padding: 80px 20px;
+    }
+
+    .fundraise-content {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .fundraise-title,
+    .fundraise-info {
+      width: 100%;
+    }
+  }

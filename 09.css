@@ -165,3 +165,40 @@
     width: 300px;
     height: auto;
   }
+
+
+  /** Responsive **/
+  @media (max-width: 1024px) {
+    .contact-section {
+      padding: 8vw;
+      margin: 120px auto;
+    }
+
+    .contact-form-section {
+      padding: 100px 40px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .contact-section {
+      flex-direction: column;
+      align-items: stretch;
+      max-width: 100%;
+      padding: 60px 20px;
+      margin: 60px auto;
+      gap: 40px;
+    }
+
+    .contact-map {
+      width: 100%;
+    }
+
+    .contact-form-section {
+      padding: 60px 20px;
+      margin-top: 40px;
+    }
+
+    .contact-form-image {
+      display: none;
+    }
+  }

@@ -11,26 +11,28 @@
 
   
   <body>
-      <!--Top Bar-->
-    <header class="fixed-bar">
-      <div class="logo">
-        <a href="index.html" aria-label="Go to homepage" title="Tabby Cats Rescue">
-          <img src="img/01.png" alt="Tabby Cats Rescue Logo" />
-        </a>
-      </div>
-      <a href="#" class="btn btn-dark-1 donate-btn" aria-label="Donate now" title="Donate to Tabby Cats Rescue">Donate</a>
-    </header>
-    
-    <!--Top Bar / Nav-->
-    <nav class="fixed-bar" aria-label="Main Navigation">
-      <ul role="menubar">
-        <li role="menuitem"><a href="02.html" title="Adopt a Cat">Adopt a Cat</a></li>
-        <li role="menuitem"><a href="03.html" title="About Us">About Us</a></li>
-        <li role="menuitem"><a href="04.html" title="Events">Events</a></li>
-        <li role="menuitem"><a href="05.html" title="Volunteering">Volunteering</a></li>
-        <li role="menuitem"><a href="06.html" title="Support Us">Support Us</a></li>
-      </ul>
-    </nav>
+      <!--Top Bar + Nav (sticky wrapper keeps the header height responsive so content below never gets hidden behind it)-->
+    <div class="top-bar">
+      <header class="fixed-bar">
+        <div class="logo">
+          <a href="index.html" aria-label="Go to homepage" title="Tabby Cats Rescue">
+            <img src="img/01.png" alt="Tabby Cats Rescue Logo" />
+          </a>
+        </div>
+        <a href="#" class="btn btn-dark-1 donate-btn" aria-label="Donate now" title="Donate to Tabby Cats Rescue">Donate</a>
+      </header>
+
+      <!--Top Bar / Nav-->
+      <nav class="fixed-bar" aria-label="Main Navigation">
+        <ul role="menubar">
+          <li role="menuitem"><a href="02.html" title="Adopt a Cat">Adopt a Cat</a></li>
+          <li role="menuitem"><a href="03.html" title="About Us">About Us</a></li>
+          <li role="menuitem"><a href="04.html" title="Events">Events</a></li>
+          <li role="menuitem"><a href="05.html" title="Volunteering">Volunteering</a></li>
+          <li role="menuitem"><a href="06.html" title="Support Us">Support Us</a></li>
+        </ul>
+      </nav>
+    </div>
 
 
       <main>

@@ -155,60 +155,65 @@
 
 
  /** Fixed Bars **/
-.fixed-bar {
-    position: fixed;
-    left: 0;
-    right: 0;
+  /** The header and nav live inside .top-bar, which is the single element that
+      sticks to the top of the viewport. Because it stays in normal document
+      flow it always reserves exactly the space it needs, so page content
+      never gets hidden behind it and no hard-coded offsets are required. **/
+  .top-bar {
+    position: sticky;
+    top: 0;
     z-index: 1000;
+  }
+
+  .fixed-bar {
     background-color: var(--bg-300);
   }
-  
+
   /** Header **/
   header {
-    top: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .logo {
     margin: 0;
   }
-  
+
   .logo img {
     width: 50px;
     height: 50px;
   }
-  
+
   .donate-btn {
     margin-left: auto;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
   /** Navigation **/
   nav {
-    top: 150px;
-    padding: 10px 0;
+    padding: 10px 20px;
     border-bottom: 1px solid var(--text-100);
   }
-  
-  
+
+
  nav ul {
     display: flex;
-    justify-content: space-between; 
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     margin: 0;
-    padding: 0 16.5%; 
-    width: 67%;
+    padding: 0;
+    gap: 8px 24px;
   }
 
-  
+
   nav li {
-    margin: 0 10px;
+    margin: 0;
   }
-  
+
   nav a {
     color: var(--text-100);
     text-decoration: none;
@@ -216,20 +221,18 @@
     font-weight: bold;
     transition: color 0.3s;
   }
-  
+
   nav a:hover {
     color: var(--accent-200);
   }
 
-  
+
 
 
   /** Main Body **/
-  
+
 main {
-    margin-top: 160px; 
     background-color: var(--bg-100);
-    margin: 0 auto;
   }
 
   .container {
@@ -249,8 +252,7 @@ main {
 /** Main Body / Hero Totle **/
 
 .welcome-section {
-  padding: 10% 16.5vh;
-  margin-top: 190px;
+  padding: 8% 16.5vh;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -259,7 +261,10 @@ main {
 
 .welcome-text {
   width: 30%;
-  font-size: 1.5vw;
+  min-width: 260px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: clamp(1.1rem, 1.5vw, 1.8rem);
   font-weight: 600;
   color: var(--text-100);
   text-align: center;
@@ -272,8 +277,11 @@ main {
 .welcome-image {
   width: 40vw;
   height: 40vw;
+  max-width: 320px;
+  max-height: 320px;
   margin-top: 10%;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .welcome-image img {
@@ -952,4 +960,208 @@ main {
 .contact-image-cat-faq {
   width: 100%;
   height: auto;
+}
+
+
+
+
+/** ============================
+    Responsive / Small screens
+    ============================ **/
+
+/* Tablet and below: the desktop layout uses huge fixed px paddings
+   and vw-based sizing that were tuned for wide screens only. Scale
+   them down so nothing overflows or gets crushed. */
+@media (max-width: 1024px) {
+  .welcome-section {
+    padding: 8% 6vh;
+  }
+
+  .testimonial-section {
+    padding: 100px 40px;
+  }
+
+  .rehoming-process {
+    padding: 200px 60px;
+  }
+
+  .faq-section {
+    margin: 120px auto;
+    padding: 0 20px;
+  }
+
+  .contact-section-faq {
+    padding: 100px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* iOS Safari mostly ignores background-attachment: fixed and can
+     jitter while trying; switch to scroll on touch-sized viewports. */
+  .welcome-section {
+    padding: 140px 20px 60px;
+    min-height: auto;
+    background-attachment: scroll;
+  }
+
+  .welcome-text {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .welcome-image {
+    width: 60vw;
+    height: 60vw;
+    margin-top: 8%;
+  }
+
+  header {
+    padding: 16px;
+  }
+
+  nav {
+    padding: 10px 16px;
+  }
+
+  nav a {
+    font-size: 15px;
+  }
+
+  .testimonial-section {
+    padding: 60px 20px;
+  }
+
+  /* The fixed 300px slider height and pixel-positioned dots/arrows were
+     tuned for a single line of desktop-width text. On narrow screens the
+     quote wraps to more lines and gets clipped, with the dots landing on
+     top of the author name. Let the slide size itself and flow the
+     navigation below it instead. */
+  .testimonial-slider {
+    height: auto;
+    overflow: visible;
+  }
+
+  .testimonial-slide {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .testimonial-radio {
+    display: none;
+  }
+
+  .testimonial-navigation {
+    position: static;
+    transform: none;
+    margin-top: 30px;
+    gap: 40px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+  }
+
+  .rehoming-process {
+    padding: 100px 20px;
+  }
+
+  .rehoming-process .process-steps {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .rehoming-process .process-step {
+    width: 100%;
+  }
+
+  .rehoming-process .button-group-home-01 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .form-title {
+    margin-top: 100px;
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+
+  form {
+    max-width: 100%;
+    margin: 0 20px;
+    padding: 24px;
+  }
+
+  .radio-options,
+  .checkbox-options {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 24px;
+  }
+
+  .footer-section:last-child {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .footer-bottom::before {
+    transform: none;
+    width: 100%;
+  }
+
+  .footer-bottom div {
+    width: 100%;
+  }
+
+  .faq-section {
+    margin: 100px auto;
+  }
+
+  .faq-title {
+    font-size: 26px;
+  }
+
+  .contact-section-faq {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .contact-info-faq {
+    flex-direction: column;
+  }
+
+  .contact-text-faq {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .contact-image-faq {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-image {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  nav ul {
+    gap: 6px 16px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .form-title {
+    font-size: 1.6rem;
+  }
 }
