@@ -43,82 +43,21 @@
   
   
   .adoption-image {
-    position: relative;
     width: 500px;
     height: 200px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     font-size: 15px;
     color: var(--text-100);
-  }
-  
-  .adoption-image-text {
-    position: relative;
-    z-index: 1;
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.4s ease;
-  }
-
-  .adoption-image-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     border: 1px solid var(--text-100);
     border-radius: 10px;
-    transition: transform 0.4s ease;
   }
 
-  .bg-1 {
-    transform: rotate(10deg) scale(1.05);
-  }
-
-  .bg-2 {
-    transform: rotate(5deg) scale(1.1);
-  }
-
-  .bg-3 {
-    transform: rotate(0deg) scale(1.15);
-  }
-
-
-
-  /* Animation */
-  @keyframes slideUpCard {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  /** Apply Animation **/
-  .adoption-section {
-    animation: slideUpCard 1s ease-out;
-  }
-
-  /* Card stack sits still by default; hovering the whole stack fans the
-     two back cards out a little and lifts the front card, instead of
-     spinning/pulsing on a loop. */
-  .adoption-image:hover .adoption-image-text {
-    transform: translateY(-6px);
-  }
-
-  .adoption-image:hover .bg-1 {
-    transform: rotate(16deg) scale(1.05) translate(-6px, 4px);
-  }
-
-  .adoption-image:hover .bg-2 {
-    transform: rotate(8deg) scale(1.1) translate(-3px, 2px);
-  }
-
-  .adoption-image:hover .bg-3 {
-    transform: rotate(-3deg) scale(1.15);
+  .adoption-image-text {
+    padding: 20px;
   }
 
 
