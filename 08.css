@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5%;
+    gap: clamp(24px, 5%, 60px);
   }
 
   .adoption-text {
