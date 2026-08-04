@@ -21,36 +21,42 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5%;
   }
-  
+
   .adoption-text {
     width: 30%;
+    min-width: 0;
   }
-  
+
   .adoption-title {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 30px;
     color: var(--text-100);
   }
-  
+
   .adoption-description {
     font-size: 15px;
     line-height: 25px;
     color: var(--text-100);
     margin-bottom: 50px;
   }
-  
-  
+
+
   .adoption-image {
-    width: 500px;
-    height: 200px;
-    max-width: 100%;
+    /* Scales smoothly with the viewport instead of jumping between a
+       fixed 500x200 box and the mobile override, so it never crowds
+       out the text column at in-between window widths. */
+    width: clamp(240px, 34vw, 500px);
+    height: clamp(130px, 14vw, 200px);
+    min-width: 0;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-size: 15px;
+    font-size: clamp(12px, 1.1vw, 15px);
     color: var(--text-100);
     border: 1px solid var(--text-100);
     border-radius: 10px;
