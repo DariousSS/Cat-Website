@@ -1014,7 +1014,7 @@ main {
 
   .welcome-text {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 4vw, 1.3rem);
   }
 
   .welcome-image {
@@ -1168,6 +1168,10 @@ main {
 }
 
 @media (max-width: 480px) {
+  .welcome-text {
+    font-size: clamp(0.9rem, 5vw, 1.1rem);
+  }
+
   .welcome-image {
     width: 70vw;
     height: 70vw;
