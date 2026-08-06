@@ -4,16 +4,29 @@
 }
 
 
-/** Main body / History Section - Video Text **/
+/** Main Body / Intro Section **/
 
-  .video-section {
-    position: relative;
-  }
-  
-  .video-section video {
-    width: 80%;
-    overflow: hidden;
-  }
+.intro-section {
+  position: relative;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.intro-content {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text-100);
+}
+
+.intro-content h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.intro-content p {
+  line-height: 1.6;
+}
  
   
 
