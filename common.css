@@ -540,7 +540,7 @@ main {
     background-image: url('./img/01_8.png');
     background-size: cover;
     background-position: center;
-    padding: 500px 320px;
+    padding: 500px 100px;
     position: relative;
     overflow: hidden;
   }
