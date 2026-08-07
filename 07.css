@@ -55,6 +55,7 @@
     justify-content: space-between;
     color: var(--text-100);
     margin-bottom: 8rem;
+    position: relative;
   }
   
   .history-text {
@@ -73,11 +74,20 @@
     height: 6vw;
     margin-top: 2.5rem;
   }
-  
+
+  .flower-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    margin-top: 0;
+  }
+
   .align-end {
     justify-content: flex-end;
   }
-  
+
   .pos-right {
     margin-right: 10.9375rem;
   }
@@ -134,8 +144,7 @@
   }
 
   .img-leaf {
-    width: 12vw;
-    height: 12vw;
+    width: 80px;
     margin-top: 0;
   }
 

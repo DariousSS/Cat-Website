@@ -11,18 +11,13 @@
 
   <body>
     <!--Top Bar + Nav (sticky wrapper keeps the header height responsive so content below never gets hidden behind it)-->
-    <div class="top-bar">
-      <header class="fixed-bar">
-        <div class="logo">
-          <a href="index.html" aria-label="Go to homepage" title="Tabby Cats Rescue">
-            <img src="img/01.png" alt="Tabby Cats Rescue Logo" />
-          </a>
-        </div>
-        <a href="#" class="btn btn-dark-1 donate-btn" aria-label="Donate now" title="Donate to Tabby Cats Rescue">Donate</a>
-      </header>
-
-      <!--Top Bar / Nav-->
-      <nav class="fixed-bar" aria-label="Main Navigation">
+    <header class="top-bar">
+      <div class="logo">
+        <a href="index.html" aria-label="Go to homepage" title="Tabby Cats Rescue">
+          <img src="img/01.png" alt="Tabby Cats Rescue Logo" />
+        </a>
+      </div>
+      <nav aria-label="Main Navigation">
         <ul role="menubar">
           <li role="menuitem"><a href="02.html" title="Adopt a Cat">Adopt a Cat</a></li>
           <li role="menuitem"><a href="03.html" title="About Us">About Us</a></li>
@@ -31,7 +26,8 @@
           <li role="menuitem"><a href="06.html" title="Support Us">Support Us</a></li>
         </ul>
       </nav>
-    </div>
+      <a href="#" class="btn btn-dark-1 donate-btn" aria-label="Donate now" title="Donate to Tabby Cats Rescue">Donate</a>
+    </header>
   
   
   
@@ -39,13 +35,10 @@
     <!--Main Body-->
     <main>
       <!--Main Body / Hero Heeader-->
-      <section class="welcome-section bg-bg-100">
+      <section class="welcome-section bg-bg-100" style="background-image: url('./img/hero-bg.jpg');">
         <div class="container">
           <div class="welcome-text">
             <h1>Welcome to Tabby Cat Rescue, we currently have <a href="02.html#find-your-match" class="highlight"><i>10 cats</i></a> up for adoption and we need your help!</h1>
-          </div>
-          <div class="welcome-image">
-            <img src="./img/01_1.png" alt="Welcome Cat" />
           </div>
         </div>
       </section>
@@ -98,10 +91,28 @@
                 cats of their own, so they couldn't keep the kittens permanently.
               </p>
             </div>
-            <img class="img-leaf" src="./img/01_6.png" alt="A decorative cat image" />
+            <svg class="img-leaf" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Yellow flower -->
+              <ellipse cx="50" cy="25" rx="13" ry="20" fill="#FDD835"/>
+              <ellipse cx="73" cy="38" rx="13" ry="20" fill="#FDD835" transform="rotate(72 73 38)"/>
+              <ellipse cx="67" cy="67" rx="13" ry="20" fill="#FDD835" transform="rotate(144 67 67)"/>
+              <ellipse cx="33" cy="67" rx="13" ry="20" fill="#FDD835" transform="rotate(-144 33 67)"/>
+              <ellipse cx="27" cy="38" rx="13" ry="20" fill="#FDD835" transform="rotate(-72 27 38)"/>
+              <circle cx="50" cy="50" r="11" fill="#FDD835"/>
+              <circle cx="50" cy="50" r="6" fill="#FF8F00"/>
+            </svg>
           </section>
           <section class="history-item align-end">
-            <img class="img-leaf pos-right" src="./img/01_7.png" alt="A decorative flying yellow leaf" />
+            <svg class="img-leaf flower-left" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Yellow flower -->
+              <ellipse cx="50" cy="25" rx="13" ry="20" fill="#FDD835"/>
+              <ellipse cx="73" cy="38" rx="13" ry="20" fill="#FDD835" transform="rotate(72 73 38)"/>
+              <ellipse cx="67" cy="67" rx="13" ry="20" fill="#FDD835" transform="rotate(144 67 67)"/>
+              <ellipse cx="33" cy="67" rx="13" ry="20" fill="#FDD835" transform="rotate(-144 33 67)"/>
+              <ellipse cx="27" cy="38" rx="13" ry="20" fill="#FDD835" transform="rotate(-72 27 38)"/>
+              <circle cx="50" cy="50" r="11" fill="#FDD835"/>
+              <circle cx="50" cy="50" r="6" fill="#FF8F00"/>
+            </svg>
             <div class="history-text">
               <h2>Tabby Cats Rescue Takes Flight</h2>
               <p class="small-text blank-bottom">So instead, they decided to take care of the kittens until they were

@@ -23,16 +23,16 @@
 
   /** Set 10 Colors **/
   :root {
-    --primary-100: #D99C52;
-    --primary-200: #b98037;
-    --primary-300: #714300;
-    --accent-100: #BF533B;
-    --accent-200: #ffe6c5;
-    --text-100: #FFFFFF;
-    --text-200: #e0e0e0;
-    --bg-100: #608C54;
-    --bg-200: #729f66;
-    --bg-300: #8fbc81;
+    --primary-100: #7A8660;
+    --primary-200: #66724F;
+    --primary-300: #556040;
+    --accent-100: #D7B15B;
+    --accent-200: #E8C97A;
+    --text-100: #232323;
+    --text-200: #666666;
+    --bg-100: #F7F4EC;
+    --bg-200: #FCFAF5;
+    --bg-300: #A5B08B;
   }
   
   .color-primary-100 { color: var(--primary-100); }
@@ -71,18 +71,18 @@
   }
   
   .btn-dark-1 {
-    background-color: var(--accent-200);
-    color: var(--accent-100);
+    background-color: var(--primary-100);
+    color: #FFFFFF;
   }
   
   .btn-dark-2 {
-    color: var(--accent-100);
-    border: 1px solid var(--accent-100);
+    color: var(--primary-100);
+    border: 1px solid var(--primary-100);
     background-color: transparent;
   }
   
   .btn-dark-3 {
-    color: var(--accent-100);
+    color: var(--primary-100);
     border: none;
     background-color: transparent;
     padding-right: 30px;
@@ -98,14 +98,14 @@
   }
   
   .btn-light-1 {
-    background-color: var(--primary-100);
-    color: var(--primary-300);
+    background-color: var(--accent-100);
+    color: #FFFFFF;
   }
   
   .btn-light-2 {
-    color: var(--primary-300);
-    border: 1px solid var(--primary-300);
-    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid var(--primary-100);
+    background-color: var(--primary-100);
   }
   
   .btn-light-3 {
@@ -127,8 +127,8 @@
 
   /** Set 6 Buttons / Hover **/
   .btn-dark-1:hover {
-    background-color: var(--primary-100);
-    color: var(--primary-300);
+    background-color: #FFFFFF;
+    color: var(--primary-100);
   }
   
   .btn-light-1:hover {
@@ -164,74 +164,72 @@
     top: 0;
     z-index: 1000;
     transition: transform 0.3s ease;
+    background-color: var(--primary-100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
   }
-
-  /* Added by site.js: slides the bar out of view while scrolling down,
-     and back in as soon as the user scrolls up, so it doesn't eat
-     screen space while reading on a small viewport. */
+  
   .top-bar.is-hidden {
     transform: translateY(-100%);
   }
-
-  .fixed-bar {
-    background-color: var(--bg-300);
-  }
-
-  /** Header **/
-  header {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
+  
   .logo {
     margin: 0;
+    flex-shrink: 0;
   }
 
   .logo img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
 
-  .donate-btn {
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  /** Navigation **/
   nav {
-    padding: 10px 20px;
-    border-bottom: 1px solid var(--text-100);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    background: none;
+    border: none;
   }
 
-
- nav ul {
+  nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 8px 24px;
+    gap: 0;
   }
-
 
   nav li {
     margin: 0;
   }
 
   nav a {
-    color: var(--text-100);
+    display: block;
+    padding: 14px 22px;
+    color: #FFFFFF;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+    white-space: nowrap;
   }
 
   nav a:hover {
-    color: var(--accent-200);
+    color: var(--accent-100);
+  }
+  
+  .donate-btn {
+    margin: 0;
+    flex-shrink: 0;
+  }
+  
+  .donate-btn:hover {
+    background-color: #FFFFFF;
+    color: var(--primary-100);
   }
 
 
@@ -250,7 +248,7 @@ main {
   }
   
   .highlight {
-    color: var(--accent-200);
+    color: #FFD700;
   }
   
 
@@ -260,41 +258,49 @@ main {
 /** Main Body / Hero Totle **/
 
 .welcome-section {
-  padding: 8% 16.5vh;
+  padding: 35vh 0 0;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.welcome-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%);
+  pointer-events: none;
 }
 
 .welcome-text {
-  width: 30%;
-  min-width: 260px;
+  width: auto;
   max-width: 600px;
-  margin: 0 auto;
-  font-size: clamp(1.1rem, 1.5vw, 1.8rem);
+  margin: 0 8% 0;
+  padding: 0;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: 600;
-  color: var(--text-100);
-  text-align: center;
+  color: #FFFFFF;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .welcome-text a:hover {
-  color: var(--accent-100);
+  color: var(--accent-200);
 }
 
 .welcome-image {
-  width: 40vw;
-  height: 40vw;
-  max-width: 320px;
-  max-height: 320px;
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.welcome-image img {
-  width: 100%;
-  height: auto;
+  display: none;
 }
 
 /** Main Body / Text Animation **/
@@ -764,9 +770,9 @@ main {
 
   /** Footer **/
   footer {
-    background-color: var(--bg-100);
+    background-color: var(--primary-100);
     padding: 50px 0;
-    color: var(--text-100);
+    color: #FFFFFF;
   }
   
   .footer-content {
@@ -805,13 +811,13 @@ main {
   }
   
   .footer-section ul li a {
-    color: var(--text-100);
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s;
   }
   
   .footer-section ul li a:hover {
-    color: var(--accent-200);
+    color: var(--accent-100);
   }
   
   .footer-logo img {
@@ -860,7 +866,7 @@ main {
     left: 0;
     transform: translateX(5.75%);
     width: 90%;
-    border-top: 1px solid var(--text-100);
+    border-top: 1px solid rgba(255,255,255,0.3);
   }
   
   .footer-bottom div {
@@ -1007,14 +1013,23 @@ main {
   /* iOS Safari mostly ignores background-attachment: fixed and can
      jitter while trying; switch to scroll on touch-sized viewports. */
   .welcome-section {
-    padding: 140px 20px 60px;
-    min-height: auto;
+    padding: 0;
+    min-height: 100vh;
     background-attachment: scroll;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
   }
 
   .welcome-text {
-    width: 100%;
-    font-size: clamp(1rem, 4vw, 1.3rem);
+    width: auto;
+    margin: 33vh 6% 20%;
+    font-size: clamp(1rem, 5vw, 1.4rem);
+    text-align: left;
+  }
+
+  .welcome-image {
+    display: none;
   }
 
   .welcome-image {
@@ -1168,21 +1183,62 @@ main {
 }
 
 @media (max-width: 480px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 16px;
+  }
+  
+  .top-bar ul {
+    justify-content: center;
+    gap: 8px 16px;
+  }
+  
+  .top-bar a {
+    font-size: 14px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .welcome-section {
+    padding: 0;
+    min-height: 100vh;
+    background-attachment: scroll;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
   .welcome-text {
+    margin: 33vh 5% 18%;
     font-size: clamp(0.9rem, 5vw, 1.1rem);
+    text-align: left;
   }
 
   .welcome-image {
-    width: 70vw;
-    height: 70vw;
+    display: none;
+  }
+
+  nav {
+    padding: 6px 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: none;
+    border-top: 1px solid var(--text-100);
   }
 
   nav ul {
-    gap: 6px 16px;
+    gap: 4px 12px;
   }
 
   nav a {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .form-title {
