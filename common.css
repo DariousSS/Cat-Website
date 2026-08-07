@@ -141,7 +141,7 @@
     color: var(--accent-200);
   }
   .btn-light-2:hover {
-    background-color: var(--primary-300);
+    background-color: #f0f7f0;
     color: var(--primary-100);
   }
   
@@ -248,6 +248,18 @@ main {
   }
   
   .highlight {
+    color: #FFFFFF;
+    text-decoration-color: #FFFFFF;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  }
+
+  .highlight:hover {
+    color: #FFD700;
+    text-decoration-color: #FFD700;
+  }
+
+  .highlight:hover i,
+  .highlight:hover em {
     color: #FFD700;
   }
   

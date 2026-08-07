@@ -1,6 +1,6 @@
 /** Main Body / Hero Title **/
 .welcome-section {
-    background-image: url('./img/hero-background-2.jpg');
+    background-image: url('./img/02_hero-bg.png');
   }
 
 
@@ -60,10 +60,18 @@
     color: var(--text-100);
     border: 1px solid var(--text-100);
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .adoption-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
 
   .adoption-image-text {
     padding: 20px;
+    color: #fff;
   }
 
 
@@ -178,10 +186,15 @@
     color: #fff;
     padding-bottom: 300px;
   }
+
+  .cats-list-section .cat-description {
+    color: #333 !important;
+  }
   
   .section-header {
     text-align: center;
     padding-top: 200px;
+    color: #333;
   }
   
   .section-title {
@@ -240,6 +253,7 @@
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 50px;
+    color: #333 !important;
   }
   
   .cat-actions {
