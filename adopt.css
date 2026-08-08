@@ -1,6 +1,6 @@
 /** Main Body / Hero Title **/
 .welcome-section {
-    background-image: url('./img/02_hero-bg.png');
+    background-image: url('./img/adopt-bg.png');
   }
 
 
@@ -99,6 +99,7 @@
   
   .find-match-image {
     width: 30%;
+    margin-top: 150px;
   }
   
   .find-match-image img {
@@ -109,7 +110,7 @@
   
   .find-match-text {
     width: 50%;
-    margin-top: 150px;
+    margin-top: 100px;
   }
   
   .find-match-title {
@@ -211,17 +212,17 @@
   
   .cat-card {
     max-width: 70vw;
-    margin: 250px 15vw 0;
+    margin: 30px 15vw 0;
     text-align: auto;
   }
   
   .cat-image-container-left {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     margin-left: 5vw;
   }
 
   .cat-image-container-right {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     margin-left: 35vw;
   }
   
