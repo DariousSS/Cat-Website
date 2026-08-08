@@ -137,8 +137,8 @@
   }
   
   .btn-dark-2:hover {
-    background-color: var(--accent-100);
-    color: var(--accent-200);
+    background-color: var(--primary-100);
+    color: #FFFFFF;
   }
   .btn-light-2:hover {
     background-color: #f0f7f0;
