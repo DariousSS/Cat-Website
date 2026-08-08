@@ -45,8 +45,8 @@
   .event-date {
     box-sizing: border-box;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: -5px;
+    left: -5px;
     border-radius: 100%;
     width: clamp(48px, 16vw, 90px);
     height: clamp(48px, 16vw, 90px);
