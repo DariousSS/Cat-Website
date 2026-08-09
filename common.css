@@ -210,10 +210,10 @@
 
   nav a {
     display: block;
-    padding: 14px 22px;
+    padding: 14px clamp(0.5rem, 1.5vw, 1.4rem);
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 15px;
+    font-size: clamp(0.85rem, 1.3vw, 1rem);
     font-weight: bold;
     transition: color 0.3s, background-color 0.3s;
     white-space: nowrap;
