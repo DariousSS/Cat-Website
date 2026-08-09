@@ -1236,7 +1236,7 @@ main {
   }
 
   nav {
-    padding: 6px 12px;
+    padding: 4px 8px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1244,14 +1244,20 @@ main {
     z-index: 1000;
     border-bottom: none;
     border-top: 1px solid var(--text-100);
+    background-color: var(--primary-100);
   }
 
   nav ul {
-    gap: 4px 12px;
+    gap: 0 4px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   nav a {
-    font-size: 13px;
+    font-size: 11px;
+    padding: 8px 6px;
+    line-height: 1.2;
+    text-align: center;
   }
 
   .form-title {
